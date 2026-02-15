@@ -5,20 +5,74 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="25dp"
+    android:orientation="vertical"
     tools:context=".login">
     
     <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:src="palomitas"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/palomitas"
+        android:layout_gravity="center"/>
 
-     />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="28sp"
+        android:layout_gravity="center"
+        android:layout_margin="35sp"
+        android:text="@string/login" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/username"
+        android:layout_margin="15dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/password"
+        android:layout_margin="15dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:inputType="textPassword"/>
+
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="@string/forgot_password"
+        android:id="@+id/forgot_password"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:layout_gravity="center"
+        />
+    
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/btnGo"
+        android:layout_marginTop="30dp"
+        android:text="@string/go"/>
     
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/login"
-        an
+        android:text="@string/sign_up"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        />
+
 
 
 </LinearLayout>
